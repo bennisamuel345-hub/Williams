@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+     <style>
+
+.left{
+    display:flex;
+    align-items:center;
+    gap: 1px;
+}
+
+.arrow{
+    color:#999;
+}
+
+.menu li{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 20px;
+    color:#555;
+    font-size:14px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu li:hover{
+    background:#f5f5f5;
+    color:#5b38f5;
+}
+
+.menu{
+    padding-bottom:px ;
+}
+
+.menu ul{
+    list-style:none;
+}
+
+.icon{
+    width:28px;
+    font-size:16px;
+}
+
+
+
+ </style>
+   
+
+
+<div class="col-lg-12 col-12 ">
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+
+    <div class="d-flex align-items-center"> 
+    <p class="d-inline-flex gap-1">
+  <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"> <i class="fa-solid fa-bars"></i> </button>
+    
+  </a>
+    
+    <a class="navbar-brand ms-2">ALPHA</a>
+    </div>
+
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
+    <div class="d-flex">
+    <i style="font-size: 100%"; class="fa-regular fa-bell me-1"></i>
+    <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    
+</div>
+</nav>
+
+
+<div class="row mt-5">
+
+        <div id="sidebar" style="background-color:ghostwhite;" class="col-lg-2 col-4">
+
+            <div class="h-20 border-bottom">
+
+            <i style="font-size: 500%;" class="fa-solid fa-circle-user ms-5 mt-5"></i>
+            <h5 class="text-center">David Doe</h5>
+
+            <div class="left">
+                <p class="text-center ms-5">david@gmail.com</p>
+                <span > <i class="fa-solid fa-angle-down"></i> </span>
+            </div>
+
+                <div style="border-bottom: black solid 2px" ></div>
+            
+            
+             <div class="menu">
+
+            <ul>
+                <a href="dashboard2.html">
+                     <li>
+                <div class="left">
+                    <span class="icon">🏠</span>
+                    Dashboard
+                </div>
+            </li>
+                </a>
+
+            <li>
+                <div class="left">
+                    <i style="font-size: 20px;" class="fa-brands fa-app-store"></i>
+                    Apps
+                </div>
+                <span class="arrow">›</span>
+            </li>
+
+            <li>
+                <div class="left">
+                    <i style="font-size: 20px;" class="fa-solid fa-tv"></i>
+                    Layouts
+                </div>
+                <span class="arrow">›</span>
+            </li>
+
+            <li>
+                <div class="left">
+                    <i style="font-size: 20px;" class="fa-solid fa-code"></i>
+                    Components
+                </div>
+                <span class="arrow">›</span>
+            </li>
+
+            <li>
+                <div class="left">
+                    <i style="font-size: 20px;" class="fa-regular fa-star"></i>
+                    Plugins
+                </div>
+                <span class="arrow">›</span>
+            </li>
+
+            <li>
+                <div class="left">
+                    <i style="font-size: 20px;" class="fa-solid fa-pen"></i>
+                    Forms
+                </div>
+            </li>
+            
+            <a href="table.html">
+                <li>
+                <div class="left">
+                    <span class="icon">▤</span>
+                    Tables
+                </div>
+            </li>  
+            </a>
+
+          
+
+            <li>
+                <div class="left">
+                    <i style="font-size: 20px;" class="fa-solid fa-chart-line"></i>
+                    Charts
+                </div>
+            </li>
+
+            <li>
+                <div class="left">
+                    <i style="font-size: 20px;" class="fa-regular fa-face-smile"></i>
+                    Extra Pages
+                </div>
+                <span class="arrow">›</span>
+            </li>
+
+             </ul>
+
+                <div class="mt-5 text-center">
+                    <div class="border-bottom"></div>
+                <strong>Stacks ©</strong>
+                <a href="#">Privacy & Terms</a>
+                </div>
+                
+        </div>
+
+        
+        
+    </div>  
+
+
+
+
+
+
+       
+        
+</div>
+
+    
+
+    <div data-aos="zoom-in"  class="col-lg-10 col-8">
+        <div class="card shadow-sm border-0 mt-5"></div>
+    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+        <h4 class="mb-0"> DASHBOARD TABLE </h4>
+
+        <button class="btn btn-primary btn-sm">
+            <i class="bi bi-download"></i> SAMMY REPORT
+        </button>
+    </div>
+
+    <div class="card-body">
+
+        <div class="table-responsive">
+
+            <table class="table table-hover table-bordered align-middle">
+
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>ID</th>
+                        <th>DASHBOARD</th>
+                        <th>APP</th>
+                        <th> PLUGINS</th>
+                        <th>LAYOUT</th>
+                        <th>COMPONENTS</th>
+                        <th>CHART</th>
+                        <th>DATE</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#1001</td>
+                        <td>Gateway Technlogy</td>
+                        <td>Whatsapp</td>
+                        <td>Samuel</td>
+                        <td>114</td>
+                        <td>6</td>
+                        <td width="22%">
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-success" style="width:95%">95%</div>
+                            </div>
+                        </td>
+                        <td>16 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1002</td>
+                        <td> Anime Dashboard</td>
+                        <td>Telegram</td>
+                        <td>Eren</td>
+                        <td>74</td>
+                        <td>16</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-primary" style="width:82%">82%</div>
+                            </div>
+                        </td>
+                        <td>15 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1003</td>
+                        <td>Anime Dashboard</td>
+                        <td>Snapchat</td>
+                        <td>Williams</td>
+                        <td>105</td>
+                        <td>45</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-info" style="width:70%">70%</div>
+                            </div>
+                        </td>
+                        <td>15 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1004</td>
+                        <td>Anime Dashboard</td>
+                        <td>Instagram</td>
+                        <td>Naruto</td>
+                        <td>48</td>
+                        <td>32</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-warning text-dark" style="width:60%">60%</div>
+                            </div>
+                        </td>
+                        <td>14 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1005</td>
+                        <td>Anime Dashboard</td>
+                        <td>Moviebox</td>
+                        <td>Sasuke</td>
+                        <td>124</td>
+                        <td>6</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-success" style="width:96%">96%</div>
+                            </div>
+                        </td>
+                        <td>16 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1006</td>
+                        <td>Anime Dashboard</td>
+                        <td>Youtube</td>
+                        <td>Rimuru</td>
+                        <td>88</td>
+                        <td>22</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-danger" style="width:80%">80%</div>
+                            </div>
+                        </td>
+                        <td>16 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1007</td>
+                        <td>Gateway Technlogy</td>
+                        <td>Play store</td>
+                        <td>David</td>
+                        <td>130</td>
+                        <td>70</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-info" style="width:65%">65%</div>
+                            </div>
+                        </td>
+                        <td>14 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1008</td>
+                        <td>Gateway Technlogy</td>
+                        <td>Discord</td>
+                        <td>Issac</td>
+                        <td>64</td>
+                        <td>96</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-danger" style="width:40%">40%</div>
+                            </div>
+                        </td>
+                        <td>13 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1009</td>
+                        <td>Trading dashboard</td>
+                        <td>Facebook</td>
+                        <td>Alex</td>
+                        <td>90</td>
+                        <td>10</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-success" style="width:90%">90%</div>
+                            </div>
+                        </td>
+                        <td>15 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1010</td>
+                        <td>Gateway Technlogy</td>
+                        <td>Google</td>
+                        <td>Isreal</td>
+                        <td>45</td>
+                        <td>30</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-warning text-dark" style="width:60%">60%</div>
+                            </div>
+                        </td>
+                        <td>16 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1011</td>
+                        <td>Gateway Technlogy</td>
+                        <td>Tiktok</td>
+                        <td>Witch Doctor</td>
+                        <td>150</td>
+                        <td>30</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-success" style="width:83%">83%</div>
+                            </div>
+                        </td>
+                        <td>16 Jul 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1012</td>
+                        <td>Gateway Technlogy</td>
+                        <td>Netflix</td>
+                        <td>Uzeil</td>
+                        <td>118</td>
+                        <td>22</td>
+                        <td>
+                            <div class="progress" style="height:22px;">
+                                <div class="progress-bar bg-success" style="width:84%">84%</div>
+                            </div>
+                        </td>
+                        <td>15 Jul 2026</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+<script src="js/bootstrap.js"></script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init(50);
+</script>    
+</body>
+</html>
